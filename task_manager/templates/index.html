@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Task Manager{% endblock %}
+
+{% block content %}
+    <h1>📝 Task Manager</h1>
+
+    <form method="POST" action="/add">
+        <input type="text" name="task" placeholder="New task..." required>
+        <button type="submit">Add</button>
+    </form>
+
+    <ul>
+        {% for task in tasks %}
+        <li class="{{ 'completed' if task.status == 'completed' else '' }}">
+            {{ task.name }} — <strong>{{ task.status }}</strong>
+            <a href="/complete/{{ loop.index0 }}">✅</a>
+            <a href="/delete/{{ loop.index0 }}">🗑️</a>
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
