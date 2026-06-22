@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}About me{% endblock %}
+
+{% block content %}
+    <h1>{{ info.name }}</h1>
+    <p>{{ info.description }}</p>
+    <h2>Skills:</h2>
+    <ul>
+        {% for ability in info.abilities %}
+            <li>{{ ability }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
