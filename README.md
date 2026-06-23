@@ -10,6 +10,7 @@ A collection of web development projects built with Flask, exploring routes, tem
 | `task_manager` | Web-based task manager with JSON persistence | Forms, POST/GET, JSON storage |
 | `weather_app` | Checks the current weather for any city | External APIs, dynamic templates |
 | `rest_api` | REST API for managing products | Full CRUD (GET, POST, PUT, DELETE), JSON responses |
+| `tic_tac_toe` | Tic-tac-toe game with Flask backend logic and JS frontend | fetch API, JSON communication, client-server architecture, game state management |
 
 ## 🛠️ How to run
 
